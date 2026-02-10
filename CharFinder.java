@@ -1,4 +1,6 @@
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 public class CharFinder {
 
@@ -19,6 +21,17 @@ public class CharFinder {
             }
 
         }
-        return 'N';
+        return Character.MIN_VALUE;
+    }
+    public char firstRepeatedChar(String s){
+        s = s.replace(" ", "");
+        Set<Character> set=new HashSet<>();
+        for(int i=0;i<s.length();i++){
+            if(set.contains(s.charAt(i))){
+                return s.charAt(i);
+            }
+            set.add(s.charAt(i));
+        }
+        return Character.MIN_VALUE;
     }
 }
