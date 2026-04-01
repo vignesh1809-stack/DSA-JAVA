@@ -29,7 +29,7 @@ public class HashTable {
             bucket.addLast(new Entry(key,value));
         }
 
-    public String get(int key){
+        public String get(int key){
         var entry = getEntry(key);
         return entry == null ? null : entry.value;
     }

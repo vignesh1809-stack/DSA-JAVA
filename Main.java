@@ -1,14 +1,24 @@
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
+
 
 public class Main{
     public static void main(String[] args) {
+        var list = new LinkedList();
 
-       var map = new HashTable();
-       map.put(1,"vignesh");
-       map.get(1);
-       map.remove(1);
+        list.addLast(10);
+        list.addLast(20);
+        list.addLast(30);
+        list.addFirst(9);
+//        list.indexOf(30);
+//        list.contains(30);
+        list.removeFirst();
+        list.reverse();;
+//        list.addFirst(8);
+//        list.removeLast();
+//        list.size();
+        list.print();
+        list.toArray();
+
+
 
     }
 
